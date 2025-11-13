@@ -185,13 +185,13 @@ def log_user(
                     conn.commit()
         except Exception as e2:
             error_msg1 = st.error(f"Database reconnect failed: {e2}")
-            # time.sleep(2)
-            # error_msg1.empty()
+            time.sleep(2)
+            error_msg1.empty()
 
     except Exception as e:
         error_msg2 = st.error(f"Error logging activity: {e}")
-        # time.sleep(2)
-        # error_msg2.empty()
+        time.sleep(2)
+        error_msg2.empty()
 
 
 # Define refresh_app() function
