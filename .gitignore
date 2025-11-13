@@ -14,3 +14,4 @@ wheels/
 !.streamlit/config.toml
 archive/
 .python-version
+.DS_Store
